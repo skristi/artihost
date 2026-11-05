@@ -1,279 +1,233 @@
 <!doctype html>
-<html lang="lt">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Artihost – meno ir kultūros hostelis Panevėžyje</title>
-<meta name="description" content="Artihost – Art &amp; Culture hostelis Panevėžyje. Lova bendrame kambaryje nuo 14 € už naktį, užsakant tiesiogiai. Informacija LT, EN, RU.">
-<link rel="canonical" href="https://artihost.eu/">
-<link rel="alternate" hreflang="lt" href="https://artihost.eu/">
-<link rel="alternate" hreflang="en" href="https://artihost.eu/en/">
-<link rel="alternate" hreflang="ru" href="https://artihost.eu/ru/">
+<title>Artihost Rooms – Art &amp; Culture Hostel in Panevėžys, from €14</title>
+<meta name="description" content="Where to stay in Panevėžys: Artihost, an art &amp; culture hostel in the city centre. Dorm beds from €14, private rooms and a Lux suite. See all rooms at artihost.eu/our-rooms.">
+<link rel="canonical" href="https://skristi.github.io/artihost/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Artihost – meno ir kultūros hostelis Panevėžyje">
-<meta property="og:description" content="Lova bendrame kambaryje nuo 14 € už naktį, užsakant tiesiogiai.">
-<meta property="og:url" content="https://artihost.eu/">
+<meta property="og:title" content="Artihost – Art &amp; Culture Hostel in Panevėžys">
+<meta property="og:description" content="Dorm beds from €14, private rooms and a Lux suite in Panevėžys centre. Best price when you book direct.">
+<meta property="og:url" content="https://skristi.github.io/artihost/">
 <meta name="theme-color" content="#008037">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Hostel","name":"Artihost","url":"https://artihost.eu/","description":"Art & Culture hostel in Panevėžys, Lithuania","address":{"@type":"PostalAddress","addressLocality":"Panevėžys","addressCountry":"LT"},"priceRange":"nuo 14 €"}
+{
+  "@context": "https://schema.org",
+  "@type": "Hostel",
+  "name": "Artihost",
+  "url": "https://artihost.eu/",
+  "description": "Art & Culture hostel in the centre of Panevėžys, Lithuania. Dorm beds, private rooms and a Lux suite.",
+  "telephone": "+370 622 58334",
+  "email": "hello@artihost.eu",
+  "priceRange": "€14–€82",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Savanorių a. 12",
+    "addressLocality": "Panevėžys",
+    "addressCountry": "LT"
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi (1 Gbps)", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Shared kitchen", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Self check-in", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Co-working desks", "value": true}
+  ]
+}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap">
 <style>
-body{margin:0;background:#ffffff;color:#1b1f1c;font-family:'Work Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#006b2e}a:hover{color:#004d21}
-.skip{position:absolute;left:-9999px}
-.skip:focus{left:16px;top:16px;background:#1b1f1c;color:#fff;padding:12px 16px;z-index:10}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #f2a33a;outline-offset:2px}
-summary{cursor:pointer;list-style:none}
-summary::-webkit-details-marker{display:none}
-details[open] .chev{transform:rotate(180deg)}
+:root{--green:#008037;--green-dark:#006b2e;--ink:#1b1f1c;--muted:#3b423e;--soft:#f3f7f4;--line:#e0e6e2}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Work Sans',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--green-dark)}a:hover{color:#004d21}
+a:focus-visible{outline:3px solid #f2a33a;outline-offset:2px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.display{font-family:'Amatic SC',cursive;font-weight:700;line-height:1;margin:0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:14px 30px;border-radius:999px;background:var(--green);color:#fff;font-weight:600;font-size:18px;text-decoration:none}
+.btn:hover{background:var(--green-dark);color:#fff}
+.btn-ghost{background:transparent;color:var(--green-dark);border:2px solid var(--green)}
+.btn-ghost:hover{background:var(--soft);color:var(--green-dark)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;background:var(--ink);color:#fff;padding:12px 16px;z-index:10}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:14px}
+.logo{font-family:'Amatic SC',cursive;font-weight:700;font-size:44px;color:var(--green);text-decoration:none;line-height:1}
+.hero{background:var(--soft);padding:72px 0 80px}
+.eyebrow{margin:0;font-size:15px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green-dark)}
+.hero h1{font-size:clamp(56px,8vw,96px);margin:16px 0 20px}
+.lead{font-size:20px;color:var(--muted);max-width:36em;margin:0 0 32px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.ticks{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:16px;color:var(--muted)}
+.ticks li{display:flex;align-items:center;gap:8px}
+section{padding:80px 0}
+h2.display{font-size:clamp(48px,6vw,64px);margin-bottom:12px}
+.sub{font-size:18px;color:var(--muted);margin:0 0 36px;max-width:40em}
+.rooms{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.room{border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px;background:#fff;color:inherit;text-decoration:none;transition:border-color .15s,box-shadow .15s}
+.room:hover{border-color:var(--green);box-shadow:0 8px 24px rgba(27,31,28,.07);color:inherit}
+.room h3{margin:0;font-size:21px;font-weight:600}
+.room .meta{margin:0;font-size:15px;color:#5b635e}
+.room p{margin:0;color:var(--muted);font-size:16px}
+.price{margin-top:auto !important;padding-top:8px;display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline}
+.price strong{font-size:28px;font-weight:600;color:var(--ink)}
+.price span{font-size:15px;color:#5b635e}
+.band{background:var(--green);color:#fff}
+.band .display{color:#fff}
+.perks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.perks strong{display:block;font-size:19px;margin-bottom:6px}
+.perks span{font-size:16px}
+.amen{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 32px;list-style:none;margin:0;padding:0;font-size:17px}
+.amen li{display:flex;gap:10px;align-items:flex-start}
+.amen svg{flex:none;margin-top:3px}
+.cta{text-align:center;background:var(--soft)}
+.cta .sub{margin-left:auto;margin-right:auto}
+footer{background:var(--ink);color:#e8ede9;padding:48px 0 32px;font-size:15px}
+footer a{color:#e8ede9}
+footer .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+footer h2{margin:0 0 8px;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:#fff}
+footer p{margin:0;color:#c3ccc6}
+footer address{font-style:normal;color:#c3ccc6}
+.fine{margin-top:32px;padding-top:20px;border-top:1px solid #3a413c;color:#c3ccc6;font-size:14px}
 </style>
 </head>
 <body>
-<div style="min-height: 100vh; display: flex; flex-direction: column">
-<a class="skip" href="#turinys">Pereiti prie turinio</a>
+<a class="skip" href="#main">Skip to content</a>
 
-<header style="border-bottom: 1px solid #e4e8e5; background: #ffffff">
-<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
-<a href="#" style="text-decoration: none; color: #008037; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 44px; line-height: 1" aria-label="Artihost – pagrindinis">Artihost</a>
-<nav aria-label="Pagrindinis meniu">
-<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 16px; font-weight: 500">
-<li><a href="#kambariai" style="color: #1b1f1c; text-decoration: none; padding: 12px 0; display: inline-block">Kambariai</a></li>
-<li><a href="#menas" style="color: #1b1f1c; text-decoration: none; padding: 12px 0; display: inline-block">Menas ir kultūra</a></li>
-<li><a href="#vieta" style="color: #1b1f1c; text-decoration: none; padding: 12px 0; display: inline-block">Kaip atvykti</a></li>
-<li><a href="#duk" style="color: #1b1f1c; text-decoration: none; padding: 12px 0; display: inline-block">DUK</a></li>
-<li><a href="#kontaktai" style="color: #1b1f1c; text-decoration: none; padding: 12px 0; display: inline-block">Kontaktai</a></li>
-</ul>
-</nav>
-<div style="display: flex; align-items: center; gap: 16px">
-<div style="display: flex; gap: 2px; font-size: 14px; font-weight: 600" aria-label="Kalba">
-<a href="#" aria-current="true" style="padding: 12px 8px; color: #1b1f1c; text-decoration: underline; text-underline-offset: 4px">LT</a>
-<a href="#" lang="en" style="padding: 12px 8px; color: #5b635e; text-decoration: none">EN</a>
-<a href="#" lang="ru" style="padding: 12px 8px; color: #5b635e; text-decoration: none">RU</a>
-</div>
-<a href="#uzsakymas" style="background: #008037; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 16px; padding: 12px 22px; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Užsakyti</a>
-</div>
-</div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="https://artihost.eu/">Artihost</a>
+    <a class="btn" href="https://artihost.eu/our-rooms">See rooms &amp; prices</a>
+  </div>
 </header>
 
-<main id="turinys" style="flex: 1">
+<main id="main">
 
-<section aria-labelledby="hero-h" style="background: #f3f7f4">
-<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 80px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-size: 15px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #006b2e">Art &amp; Culture · Panevėžys</p>
-<h1 id="hero-h" style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 88px; line-height: 0.95; color: #1b1f1c">Meno ir kultūros hostelis Panevėžyje</h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.55; color: #3b423e; max-width: 34em">Jauki nakvynė keliautojams, menininkams ir kultūros mylėtojams. Lova bendrame kambaryje – nuo <strong style="color: #1b1f1c">14 € už naktį</strong>, užsakant tiesiogiai.</p>
-
-<form id="uzsakymas" action="#" aria-label="Laisvų vietų paieška" style="background: #ffffff; border: 1px solid #d6ddd8; border-radius: 16px; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; align-items: end; box-shadow: 0 8px 24px rgba(27,31,28,0.06)">
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="atvykimas" style="font-size: 14px; font-weight: 600">Atvykimas</label>
-<input id="atvykimas" name="atvykimas" type="date" style="font: inherit; font-size: 16px; padding: 10px 12px; min-height: 44px; box-sizing: border-box; border: 1px solid #b9c3bc; border-radius: 10px; background: #fff; color: #1b1f1c">
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="isvykimas" style="font-size: 14px; font-weight: 600">Išvykimas</label>
-<input id="isvykimas" name="isvykimas" type="date" style="font: inherit; font-size: 16px; padding: 10px 12px; min-height: 44px; box-sizing: border-box; border: 1px solid #b9c3bc; border-radius: 10px; background: #fff; color: #1b1f1c">
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="sveciai" style="font-size: 14px; font-weight: 600">Svečiai</label>
-<select id="sveciai" name="sveciai" style="font: inherit; font-size: 16px; padding: 10px 12px; min-height: 44px; box-sizing: border-box; border: 1px solid #b9c3bc; border-radius: 10px; background: #fff; color: #1b1f1c">
-<option>1 svečias</option>
-<option>2 svečiai</option>
-<option>3 svečiai</option>
-<option>4+ svečiai</option>
-</select>
-</div>
-<button type="submit" style="font: inherit; font-size: 17px; font-weight: 600; background: #008037; color: #ffffff; border: 0; border-radius: 10px; padding: 12px 20px; min-height: 48px; cursor: pointer">Tikrinti vietas</button>
-</form>
-
-<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: 15px; color: #3b423e">
-<li style="display: flex; align-items: center; gap: 8px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Mažiausia kaina – tik čia</li>
-<li style="display: flex; align-items: center; gap: 8px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Grįžtantiems svečiams – 13 €</li>
-<li style="display: flex; align-items: center; gap: 8px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Informacija LT · EN · RU</li>
-</ul>
-</div>
-
-<div style="flex: 1 1 420px; min-width: 0">
-<div role="img" aria-label="Vieta pagrindinei hostelio nuotraukai" style="aspect-ratio: 4 / 5; border-radius: 24px; background: #dfe8e2; border: 2px dashed #9fb3a6; display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box; text-align: center; color: #45524a; font-size: 16px; line-height: 1.5">[Pagrindinė nuotrauka: bendra erdvė su meno kūriniais, šviesi, su žmonėmis]<br>WebP · 1600×2000 · alt tekstas lietuviškai</div>
-</div>
-</div>
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap">
+    <p class="eyebrow">Where to stay in Panevėžys</p>
+    <h1 id="hero-h" class="display">Artihost – art &amp; culture hostel in Panevėžys centre</h1>
+    <p class="lead">Looking for a place to stay in Panevėžys? Artihost has dorm beds from <strong>€14 a night</strong>, private rooms for two or three, and a Lux suite with its own bathroom and kitchen. All rooms, photos and live availability are on the official rooms page.</p>
+    <div class="hero-actions">
+      <a class="btn" href="https://artihost.eu/our-rooms">View all rooms at artihost.eu
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <ul class="ticks">
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Best price when you book direct</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Self check-in, arrive any time</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1 Gbps Wi-Fi &amp; co-working desks</li>
+    </ul>
+  </div>
 </section>
 
-<section id="kambariai" aria-labelledby="kamb-h" style="padding: 88px 24px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 12px; max-width: 40em">
-<h2 id="kamb-h" style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 64px; line-height: 1">Kambariai</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3b423e">Kainos nurodytos už naktį, užsakant tiesiogiai šioje svetainėje.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
-
-<article style="border: 1px solid #e0e6e2; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; background: #fff">
-<div role="img" aria-label="Vieta 8 vietų kambario nuotraukai" style="aspect-ratio: 3 / 2; background: #e9efeb; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 15px; padding: 16px; text-align: center">[8 vietų kambario nuotrauka]</div>
-<div style="padding: 24px; display: flex; flex-direction: column; gap: 14px; flex: 1">
-<h3 style="margin: 0; font-size: 22px; font-weight: 600">8 vietų bendras kambarys</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3b423e">[Trumpas aprašymas: lovos tipas, spintelės, šviestuvai, patalynė]</p>
-<p style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-size: 15px; color: #5b635e">nuo</span><span style="font-size: 32px; font-weight: 600">14 €</span><span style="font-size: 15px; color: #5b635e">/ naktis</span></p>
-<p style="margin: 0; font-size: 14px; color: #006b2e; font-weight: 600">Grįžtantiems svečiams – 13 €</p>
-<a href="#uzsakymas" style="margin-top: auto; text-align: center; border: 2px solid #008037; color: #006b2e; text-decoration: none; font-weight: 600; padding: 11px 16px; border-radius: 10px; min-height: 44px; box-sizing: border-box">Pasirinkti</a>
-</div>
-</article>
-
-<article style="border: 1px solid #e0e6e2; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; background: #fff">
-<div role="img" aria-label="Vieta kambario nuotraukai" style="aspect-ratio: 3 / 2; background: #e9efeb; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 15px; padding: 16px; text-align: center">[Kambario nuotrauka]</div>
-<div style="padding: 24px; display: flex; flex-direction: column; gap: 14px; flex: 1">
-<h3 style="margin: 0; font-size: 22px; font-weight: 600">[Kambario pavadinimas]</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3b423e">[Trumpas aprašymas]</p>
-<p style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-size: 15px; color: #5b635e">nuo</span><span style="font-size: 32px; font-weight: 600">[KAINA]</span><span style="font-size: 15px; color: #5b635e">/ naktis</span></p>
-<a href="#uzsakymas" style="margin-top: auto; text-align: center; border: 2px solid #008037; color: #006b2e; text-decoration: none; font-weight: 600; padding: 11px 16px; border-radius: 10px; min-height: 44px; box-sizing: border-box">Pasirinkti</a>
-</div>
-</article>
-
-<article style="border: 1px solid #e0e6e2; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; background: #fff">
-<div role="img" aria-label="Vieta privataus kambario nuotraukai" style="aspect-ratio: 3 / 2; background: #e9efeb; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 15px; padding: 16px; text-align: center">[Privataus kambario nuotrauka]</div>
-<div style="padding: 24px; display: flex; flex-direction: column; gap: 14px; flex: 1">
-<h3 style="margin: 0; font-size: 22px; font-weight: 600">[Privatus kambarys]</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3b423e">[Trumpas aprašymas]</p>
-<p style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-size: 15px; color: #5b635e">nuo</span><span style="font-size: 32px; font-weight: 600">[KAINA]</span><span style="font-size: 15px; color: #5b635e">/ naktis</span></p>
-<a href="#uzsakymas" style="margin-top: auto; text-align: center; border: 2px solid #008037; color: #006b2e; text-decoration: none; font-weight: 600; padding: 11px 16px; border-radius: 10px; min-height: 44px; box-sizing: border-box">Pasirinkti</a>
-</div>
-</article>
-</div>
-</div>
+<section aria-labelledby="rooms-h">
+  <div class="wrap">
+    <h2 id="rooms-h" class="display">Rooms at a glance</h2>
+    <p class="sub">Prices per night. Choose a room to see photos and book on artihost.eu.</p>
+    <div class="rooms">
+      <a class="room" href="https://artihost.eu/our-rooms">
+        <h3>8-bed room</h3>
+        <p class="meta">Bunk beds · 15 m² · up to 8 guests</p>
+        <p>Classic dorm with a privacy curtain and reading lamp at every bed.</p>
+        <p class="price"><strong>€14</strong><span>per bed · €82 whole room</span></p>
+      </a>
+      <a class="room" href="https://artihost.eu/our-rooms">
+        <h3>6-bed room</h3>
+        <p class="meta">Bunk beds · 17 m² · up to 6 guests</p>
+        <p>A calmer dorm with more space per guest, good for small groups.</p>
+        <p class="price"><strong>€16</strong><span>per bed · €67 whole room</span></p>
+      </a>
+      <a class="room" href="https://artihost.eu/our-rooms">
+        <h3>4-bed room</h3>
+        <p class="meta">Bunk beds · 11 m² · up to 4 guests</p>
+        <p>Cosy room for friends or a travelling family.</p>
+        <p class="price"><strong>€17</strong><span>per bed · €47 whole room</span></p>
+      </a>
+      <a class="room" href="https://artihost.eu/our-rooms">
+        <h3>Trio room</h3>
+        <p class="meta">3 single beds · 18 m² · up to 3 guests</p>
+        <p>Bright room with real single beds and a city view.</p>
+        <p class="price"><strong>€18</strong><span>per bed · €42 whole room</span></p>
+      </a>
+      <a class="room" href="https://artihost.eu/our-rooms">
+        <h3>Duo room</h3>
+        <p class="meta">2 single beds · up to 2 guests</p>
+        <p>Quiet twin room for a couple or two friends.</p>
+        <p class="price"><strong>€22</strong><span>per bed · €32 whole room</span></p>
+      </a>
+      <a class="room" href="https://artihost.eu/our-rooms">
+        <h3>Lux suite</h3>
+        <p class="meta">1 double bed · 33 m² · up to 2 guests</p>
+        <p>Private bathroom with bathtub, private kitchen, sofa corner and work desk.</p>
+        <p class="price"><strong>€40</strong><span>whole room</span></p>
+      </a>
+    </div>
+  </div>
 </section>
 
-<section aria-labelledby="kodel-h" style="background: #008037; color: #ffffff; padding: 72px 24px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
-<h2 id="kodel-h" style="flex: 1 1 320px; margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 60px; line-height: 1">Kodėl verta užsakyti tiesiogiai?</h2>
-<ul style="flex: 2 1 520px; min-width: 0; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px">
-<li style="display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 19px">Mažiausia kaina</strong><span style="font-size: 16px; line-height: 1.55">Be tarpininkų mokesčių – tiesiai hosteliui.</span></li>
-<li style="display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 19px">Nuolaida grįžtantiems</strong><span style="font-size: 16px; line-height: 1.55">Antrą kartą lova kainuoja 13 €.</span></li>
-<li style="display: flex; flex-direction: column; gap: 8px"><strong style="font-size: 19px">Tiesioginis ryšys</strong><span style="font-size: 16px; line-height: 1.55">Klausimus atsakome patys, jūsų kalba.</span></li>
-</ul>
-</div>
+<section class="band" aria-labelledby="direct-h">
+  <div class="wrap">
+    <h2 id="direct-h" class="display">Why book direct on artihost.eu</h2>
+    <ul class="perks">
+      <li><strong>Best price</strong><span>No booking-site fees – the lowest rate is on the hostel's own site.</span></li>
+      <li><strong>Longer stays cost less</strong><span>1% off for every extra night, up to 10% for 10+ nights.</span></li>
+      <li><strong>Talk to the hosts</strong><span>Questions by Viber or WhatsApp, answered directly.</span></li>
+    </ul>
+  </div>
 </section>
 
-<section id="menas" aria-labelledby="menas-h" style="padding: 88px 24px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
-<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
-<h2 id="menas-h" style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 64px; line-height: 1">Gyvenk tarp meno</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3b423e">[2–3 sakiniai apie tai, kuo Artihost ypatingas: kieno kūriniai eksponuojami, ar vyksta parodos, koncertai ar dirbtuvės, kaip menininkai gali čia apsistoti ar eksponuoti savo darbus.]</p>
-<a href="#" style="font-weight: 600; font-size: 17px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px">Artėjantys renginiai<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-</div>
-<div style="flex: 1.3 1 480px; min-width: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-<div role="img" aria-label="Vieta meno erdvės nuotraukai" style="aspect-ratio: 1 / 1; border-radius: 16px; background: #e9efeb; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 14px; padding: 12px; text-align: center">[Meno kūrinys / siena]</div>
-<div role="img" aria-label="Vieta renginio nuotraukai" style="aspect-ratio: 1 / 1; border-radius: 16px; background: #e9efeb; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 14px; padding: 12px; text-align: center">[Renginys / svečiai]</div>
-<div role="img" aria-label="Vieta bendros virtuvės nuotraukai" style="aspect-ratio: 1 / 1; border-radius: 16px; background: #e9efeb; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 14px; padding: 12px; text-align: center">[Bendra virtuvė / poilsio zona]</div>
-<div role="img" aria-label="Vieta Panevėžio miesto nuotraukai" style="aspect-ratio: 1 / 1; border-radius: 16px; background: #e9efeb; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 14px; padding: 12px; text-align: center">[Panevėžys / apylinkės]</div>
-</div>
-</div>
+<section aria-labelledby="amen-h">
+  <div class="wrap">
+    <h2 id="amen-h" class="display">Included in every stay</h2>
+    <p class="sub">Shared spaces made for travellers, artists and remote workers.</p>
+    <ul class="amen">
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>64 m² common hall with piano, board games and yoga mats</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fully equipped guest kitchen and free tea</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Washing and drying machines</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>1 Gbps Wi-Fi and 4 co-working desks</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Air conditioning and a reading lamp at every bed</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Lithuanian flax bedding and curtains</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Free lockers, separate showers for women and men</li>
+      <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#006b2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>An easel for drawing</li>
+    </ul>
+  </div>
 </section>
 
-<section aria-labelledby="atsil-h" style="background: #f3f7f4; padding: 88px 24px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px">
-<h2 id="atsil-h" style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 64px; line-height: 1">Ką sako svečiai</h2>
-<p style="margin: 0; font-size: 16px; color: #3b423e">[Įvertinimas] iš [N] atsiliepimų · <a href="#">Google</a> · <a href="#">Booking.com</a> · <a href="#">Airbnb</a></p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
-<figure style="margin: 0; background: #fff; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
-<blockquote style="margin: 0; font-size: 17px; line-height: 1.6">[Tikras svečio atsiliepimas, 1–3 sakiniai]</blockquote>
-<figcaption style="font-size: 14px; color: #5b635e">[Vardas], [šalis] · [šaltinis]</figcaption>
-</figure>
-<figure style="margin: 0; background: #fff; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
-<blockquote style="margin: 0; font-size: 17px; line-height: 1.6">[Tikras svečio atsiliepimas, 1–3 sakiniai]</blockquote>
-<figcaption style="font-size: 14px; color: #5b635e">[Vardas], [šalis] · [šaltinis]</figcaption>
-</figure>
-<figure style="margin: 0; background: #fff; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
-<blockquote style="margin: 0; font-size: 17px; line-height: 1.6">[Tikras svečio atsiliepimas, 1–3 sakiniai]</blockquote>
-<figcaption style="font-size: 14px; color: #5b635e">[Vardas], [šalis] · [šaltinis]</figcaption>
-</figure>
-</div>
-</div>
+<section class="cta" aria-labelledby="cta-h">
+  <div class="wrap">
+    <h2 id="cta-h" class="display">See you in Panevėžys</h2>
+    <p class="sub">Check live availability, photos and book your bed on the official rooms page.</p>
+    <a class="btn" href="https://artihost.eu/our-rooms">Book at artihost.eu/our-rooms
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
 </section>
 
-<section id="vieta" aria-labelledby="vieta-h" style="padding: 88px 24px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px">
-<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<h2 id="vieta-h" style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 64px; line-height: 1">Kaip atvykti</h2>
-<address style="font-style: normal; font-size: 18px; line-height: 1.6">Artihost<br>[Gatvė, namo nr.]<br>[Pašto kodas] Panevėžys, Lietuva</address>
-<dl style="margin: 0; display: grid; grid-template-columns: minmax(0, auto) minmax(0, 1fr); gap: 10px 20px; font-size: 16px; line-height: 1.5">
-<dt style="font-weight: 600">Autobusų stotis</dt><dd style="margin: 0; color: #3b423e">[~X min pėsčiomis]</dd>
-<dt style="font-weight: 600">Geležinkelio stotis</dt><dd style="margin: 0; color: #3b423e">[~X min]</dd>
-<dt style="font-weight: 600">Automobiliu</dt><dd style="margin: 0; color: #3b423e">[Parkavimo informacija]</dd>
-</dl>
-<a href="#" style="font-weight: 600; font-size: 17px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px">Atidaryti Google Maps<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
-</div>
-<div role="img" aria-label="Vieta žemėlapiui" style="flex: 1.4 1 480px; min-width: 0; min-height: 360px; border-radius: 20px; background: #e9efeb; border: 2px dashed #9fb3a6; display: flex; align-items: center; justify-content: center; color: #45524a; font-size: 16px; padding: 24px; text-align: center">[Žemėlapis: statinis vaizdas su nuoroda – greičiau nei įterptas Google Maps]</div>
-</div>
-</section>
-
-<section id="duk" aria-labelledby="duk-h" style="background: #f3f7f4; padding: 88px 24px">
-<div style="max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
-<h2 id="duk-h" style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 64px; line-height: 1">Dažni klausimai</h2>
-<div style="display: flex; flex-direction: column; gap: 12px">
-<details style="background: #fff; border-radius: 14px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; font-size: 18px; font-weight: 600; min-height: 44px">Kada galiu atvykti ir išvykti?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-<p style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #3b423e">Įsiregistravimas nuo [LAIKAS], išsiregistravimas iki [LAIKAS].</p>
-</details>
-<details style="background: #fff; border-radius: 14px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; font-size: 18px; font-weight: 600; min-height: 44px">Kaip pateksiu į hostelį?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-<p style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #3b423e">Prieš atvykimą atsiųsime atvykimo instrukcijas jūsų pasirinkta kalba – lietuvių, anglų arba rusų.</p>
-</details>
-<details style="background: #fff; border-radius: 14px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; font-size: 18px; font-weight: 600; min-height: 44px">Ar patalynė ir rankšluosčiai įskaičiuoti?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-<p style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #3b423e">[Atsakymas]</p>
-</details>
-<details style="background: #fff; border-radius: 14px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; font-size: 18px; font-weight: 600; min-height: 44px">Ar galima atšaukti užsakymą?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-<p style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #3b423e">[Atšaukimo sąlygos]</p>
-</details>
-<details style="background: #fff; border-radius: 14px; padding: 4px 24px">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 0; font-size: 18px; font-weight: 600; min-height: 44px">Ar yra virtuvė ir Wi-Fi?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-<p style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #3b423e">[Atsakymas]</p>
-</details>
-</div>
-</div>
-</section>
-
-<section aria-labelledby="cta-h" style="padding: 88px 24px; text-align: center">
-<div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 20px">
-<h2 id="cta-h" style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 72px; line-height: 1">Iki pasimatymo Panevėžyje</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3b423e">Užsisakykite tiesiogiai ir mokėkite mažiausią kainą.</p>
-<a href="#uzsakymas" style="background: #008037; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 18px; padding: 14px 32px; border-radius: 999px; min-height: 52px; box-sizing: border-box; display: inline-flex; align-items: center">Tikrinti laisvas vietas</a>
-</div>
-</section>
 </main>
 
-<footer id="kontaktai" style="background: #1b1f1c; color: #e8ede9; padding: 64px 24px 32px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px">
-<div style="display: flex; flex-direction: column; gap: 10px">
-<p style="margin: 0; font-family: 'Amatic SC', cursive; font-weight: 700; font-size: 44px; line-height: 1; color: #4fc17d">Artihost</p>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #c3ccc6">Art &amp; Culture hostelis Panevėžyje</p>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.6">
-<h2 style="margin: 0 0 4px; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff">Kontaktai</h2>
-<a href="#" style="color: #e8ede9">[+370 xxx xxxxx]</a>
-<a href="#" style="color: #e8ede9">[el. paštas]@artihost.eu</a>
-<span style="color: #c3ccc6">[Adresas], Panevėžys</span>
-</div>
-<nav aria-label="Poraštės nuorodos" style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.6">
-<h2 style="margin: 0 0 4px; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff">Informacija</h2>
-<a href="#" style="color: #e8ede9">Hostelio taisyklės</a>
-<a href="#" style="color: #e8ede9">Atšaukimo sąlygos</a>
-<a href="#" style="color: #e8ede9">Privatumo politika</a>
-</nav>
-<div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.6">
-<h2 style="margin: 0 0 4px; font-size: 15px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff">Sekite mus</h2>
-<a href="#" style="color: #e8ede9">Instagram</a>
-<a href="#" style="color: #e8ede9">Facebook</a>
-<a href="#" style="color: #e8ede9">Google atsiliepimai</a>
-</div>
-</div>
-<p style="margin: 0; padding-top: 24px; border-top: 1px solid #3a413c; font-size: 14px; color: #c3ccc6">© 2026 Artihost · [Įmonės pavadinimas, įmonės kodas]</p>
-</div>
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h2>Artihost</h2>
+        <p>Art &amp; Culture hostel in Panevėžys, Lithuania</p>
+      </div>
+      <div>
+        <h2>Address</h2>
+        <address>Savanorių a. 12, central entrance, 3rd floor<br>Panevėžys, Lithuania</address>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p><a href="tel:+37062258334">+370 622 58334</a> (Viber, WhatsApp)<br><a href="mailto:hello@artihost.eu">hello@artihost.eu</a></p>
+      </div>
+      <div>
+        <h2>Book</h2>
+        <p><a href="https://artihost.eu/our-rooms">artihost.eu/our-rooms</a><br><a href="https://artihost.eu/">artihost.eu</a></p>
+      </div>
+    </div>
+    <p class="fine">© 2026 Artihost. Prices as listed on artihost.eu; see the rooms page for current rates and availability.</p>
+  </div>
 </footer>
-</div>
 </body>
 </html>

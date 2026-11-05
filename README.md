@@ -38,3 +38,4 @@ Artihost svetainės ir svečių komunikacijos medžiaga.
 ## Links / Nuorodos
 
 - Website / Svetainė: https://artihost.eu
+- Rooms & prices / Kambariai ir kainos: https://artihost.eu/our-rooms
